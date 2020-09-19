@@ -13,7 +13,7 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:scaleType="centerCrop"
 
         android:src="@drawable/singapor1"
@@ -24,30 +24,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="56dp"
+    <ImageView
 
-        android:layout_height="56dp"
-        android:layout_marginEnd="16dp"
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="25dp"
         android:scaleType="centerCrop"
-        android:src="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/shape_of_iconbutton1"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"></ImageButton>
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="28dp"
         android:text="Singapore"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -55,7 +57,7 @@
         android:id="@+id/textView"
         android:layout_width="97dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="8dp"
         android:text="camera"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,11 +65,11 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="249dp"
-        android:layout_height="wrap_content"
+        android:layout_width="223dp"
+        android:layout_height="41dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="camera model"
@@ -80,7 +82,7 @@
         android:id="@+id/textView3"
         android:layout_width="97dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="12dp"
         android:text="settings"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,11 +90,11 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="256dp"
-        android:layout_height="wrap_content"
+        android:layout_width="223dp"
+        android:layout_height="41dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="settings"
@@ -104,40 +106,42 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
         android:text="Upload"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
-        app:layout_constraintVertical_bias="0.701" />
+        app:layout_constraintTop_toBottomOf="@+id/TextTextMultiLine2"
+        app:layout_constraintVertical_bias="0.656" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="218dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginBottom="10dp"
         android:text="Discord"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/TextTextMultiLine2"
+        app:layout_constraintVertical_bias="0.656" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="383dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="16dp"
+    <TextView
+        android:id="@+id/TextTextMultiLine2"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="26dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
         android:text="If you're developing and Android versions within the same Firebase project  If you're developing your Flutter app for both iOS and Android, you need to register both the iOS and Android versions within the same Firebase project"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
